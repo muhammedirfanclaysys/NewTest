@@ -13,14 +13,14 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class UI {
+public class UINew {
 
 
-    private WebDriver driver;
-    private WebDriverWait wait;
+    private static WebDriver driver;
+    private static WebDriverWait wait;
 
     @BeforeClass
-    public void setUp() {
+    public static void setUp() {
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.get("https://www.softwaretestingmaterial.com/sample-webpage-to-automate/");
