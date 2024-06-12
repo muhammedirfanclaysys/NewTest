@@ -48,6 +48,8 @@ public class UI {
         Assert.assertTrue(confirmPasswordField.isDisplayed(), "Confirm Password field is not displayed.");
         System.out.println("Confirm Password field is displayed.");
 
+        //make new change
+
 
     }
 
