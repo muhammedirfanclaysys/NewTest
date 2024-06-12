@@ -47,34 +47,10 @@ public class UI {
         WebElement confirmPasswordField = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[contains(@value,'cbselenium')]")));
         Assert.assertTrue(confirmPasswordField.isDisplayed(), "Confirm Password field is not displayed.");
         System.out.println("Confirm Password field is displayed.");
+
+
     }
 
-  /*  @Test
-    public void testFormSubmission() {
-        // Wait for the Full Name field to be present and fill it out
-        WebElement fullNameField = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("name")));
-        fullNameField.sendKeys("John Doe");
-
-        // Wait for the Email field to be present and fill it out
-        WebElement emailField = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("email")));
-        emailField.sendKeys("johndoe@example.com");
-
-        // Wait for the Password field to be present and fill it out
-        WebElement passwordField = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("password")));
-        passwordField.sendKeys("Password123");
-
-        // Wait for the Confirm Password field to be present and fill it out
-        WebElement confirmPasswordField = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("cpassword")));
-        confirmPasswordField.sendKeys("Password123");
-
-        // Wait for the Submit button to be present and click it
-        WebElement submitButton = wait.until(ExpectedConditions.elementToBeClickable(By.name("submit")));
-        submitButton.click();
-
-        // Wait for the success message to be present and check if it is displayed
-        WebElement successMessage = wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".success-message")));
-        Assert.assertTrue(successMessage.isDisplayed(), "Success message is not displayed.");
-    } */
 
     @AfterClass
     public void tearDown() {
